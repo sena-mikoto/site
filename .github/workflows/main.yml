@@ -13,8 +13,6 @@
              submodules: recursive  # 若主题为子模块需启用
              fetch-depth: 0
 
-
-
          - name: Setup Hugo
            uses: peaceiris/actions-hugo@v3
            with:
@@ -34,4 +32,9 @@
              github_token: ${{ secrets.GITHUB_TOKEN }}
              publish_dir: ./public    # 静态文件输出目录
              publish_branch: gh-pages # 部署目标分支
-          
+      
+         - name: Cache Hugo Modules
+           uses: actions/cache@v3
+           with:
+             path: ~/.cache/hugo_modules/
+             key: ${{ runner.os }}-hugo-modules-${{ hashFiles('**/go.mod') }}
