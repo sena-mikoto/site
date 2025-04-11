@@ -1,0 +1,39 @@
+baseURL: "https://471141908.xyz/"
+languageCode: "zh-CN"
+title: "网络订阅导航"
+enableGitInfo: false
+copyright: UNLICENSE
+
+
+menu:
+  main:
+    - name: "<u>H</u><strong>主页</strong>"
+      url: /
+      weight: 1
+    - name: "<u>T</u><strong>标签</strong>"
+      url: "/tags"
+      weight: 10
+params:
+  description: ""
+  author:
+    email: mail@mail.471141908.com
+    name: mail
+
+markup:
+  highlight:
+    codeFences: true
+    style: bw
+    lineNumbersInTable: false
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+
+outputs:
+  home:
+    - html
+    - rss
+  page:
+    - html
+
+theme: hugo-dead-simple
