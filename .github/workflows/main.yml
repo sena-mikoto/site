@@ -4,7 +4,7 @@
        branches: [ "master" ]  # 触发分支（通常为源码分支）
    jobs:
      build-and-deploy:
-       runs-on: debian-latest
+       runs-on: ubuntu-latest
        steps:
 
 
