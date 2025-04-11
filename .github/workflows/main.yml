@@ -1,7 +1,7 @@
    name: Deploy Hugo Site
    on:
      push:
-       branches: [ "main" ]  # 触发分支（通常为源码分支）
+       branches: [ "master" ]  # 触发分支（通常为源码分支）
    jobs:
      build-and-deploy:
        runs-on: ubuntu-latest
