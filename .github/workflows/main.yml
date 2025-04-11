@@ -1,4 +1,4 @@
-   name: Deploy Hugo Site
+   name: Deploy Hugo Site1
    on:
      push:
        branches: [ "master" ]  # 触发分支（通常为源码分支）
