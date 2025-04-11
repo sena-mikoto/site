@@ -7,12 +7,6 @@
        runs-on: ubuntu-latest
        steps:
 
-         - name: Checkout Code
-           uses: actions/checkout@v4
-           with:
-             submodules: recursive  # 若主题为子模块需启用
-             fetch-depth: 0
-
          - name: Setup Hugo
            uses: peaceiris/actions-hugo@v3
            with:
