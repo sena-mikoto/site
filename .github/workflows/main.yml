@@ -34,7 +34,7 @@
            with:
              github_token: ${{ secrets.GITHUB_TOKEN }}
              publish_dir: ./public    # 静态文件输出目录
-             publish_branch: gh-pages # 部署目标分支
+             publish_branch: master # 部署目标分支
       
          - name: Cache Hugo Modules
            uses: actions/cache@v3
