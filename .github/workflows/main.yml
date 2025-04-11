@@ -4,7 +4,7 @@
        branches: [ "master" ]  # 触发分支（通常为源码分支）
    jobs:
      build-and-deploy:
-       runs-on: ubuntu-latest
+       runs-on: debian-latest
        steps:
 
 
@@ -34,7 +34,6 @@
            with:
              github_token: ${{ secrets.GITHUB_TOKEN }}
              publish_dir: ./public    # 静态文件输出目录
-             publish_branch: master # 部署目标分支
       
          - name: Cache Hugo Modules
            uses: actions/cache@v3
