@@ -26,6 +26,10 @@
 
          - name: Build Site
            run: hugo --minify --gc    # 启用压缩和垃圾清理
+         
+         - name: diy
+           run: cp ./CNAME ./googled23d56b67a9363c6.html ./public
+           
 
 
 
